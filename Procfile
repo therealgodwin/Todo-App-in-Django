@@ -1,0 +1,1 @@
+web: gunicorn todo_with_reg_and_login.wsgi --log-file -
