@@ -7,5 +7,6 @@ class Todo(models.Model):
 
 
 class Task(models.Model):
+    task_created = models.DateTimeField(auto_now_add=True)
     task = models.CharField(max_length=30)
     todo = models.ForeignKey(Todo, on_delete=models.CASCADE, null=True)

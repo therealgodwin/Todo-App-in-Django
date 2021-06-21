@@ -19,7 +19,9 @@
             font-family: Hack;
         }
        .container-fluid{
-           width: 300px;
+      
+           width: 400px;
+           padding: 20px;
        }
 
         .btn {
@@ -93,8 +95,11 @@
                 <label for="{form.password1}" class="form_field_label">Password: </label> {% render_field form.password1 class+="form-field", placeholder="Password"%} <br>
                 <label for="{form.password2}" class="form_field_label">Confirm Password: </label>{% render_field form.password2 class+="form-field", placeholder="Confirm Password"%}
 
-                <input type="submit" value="register" class="register_button">
-                <a href="{% url 'login' %}" value="login" class="register_button">login</a>
+                <div class="container">
+                    <input type="submit" value="register" class="register_button">
+                    <a href="{% url 'login' %}" value="login" class="register_button">login</a>
+                </div>
+
             </form>
         </div>
     </div>
